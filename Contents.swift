@@ -35,33 +35,30 @@ class Auto
         var velocidadActual : String
         var auxiliar : Int
         
+        auxiliar = velocidad.rawValue
         
         switch velocidad
         {
             
         case .Apagado:
-            auxiliar = velocidad.rawValue
             velocidadActual = "Apagado"
             velocidad = Velocidades.VelocidadBaja
             
             break;
             
         case .VelocidadBaja :
-            auxiliar = velocidad.rawValue
             velocidadActual = "Velocidad Baja"
             velocidad = Velocidades.VelocidadMedia
             
             break;
             
         case .VelocidadMedia:
-            auxiliar = velocidad.rawValue
             velocidadActual = "Velocidad Media"
             velocidad = Velocidades.VelocidadAlta
             
             break;
             
         case .VelocidadAlta:
-            auxiliar = velocidad.rawValue
             velocidad = Velocidades.VelocidadMedia
             velocidadActual = "Velocidad Alta"
             break;
